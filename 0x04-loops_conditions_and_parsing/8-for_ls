@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#print ls result after the first dash
+lst=$(ls)
+for i in $lst
+do
+	echo "$i" | cut -d '-' -f2
+done
